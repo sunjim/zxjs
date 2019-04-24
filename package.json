@@ -1,0 +1,25 @@
+{
+  "name": "zxjs",
+  "version": "1.0.0",
+  "description": "zxjs require vue others",
+  "main": "zxjs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunjim/zxjs.git"
+  },
+  "keywords": [
+    "require",
+    "vue",
+    "jquery",
+    "bootstrap"
+  ],
+  "author": "sunjim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sunjim/zxjs/issues"
+  },
+  "homepage": "https://github.com/sunjim/zxjs#readme"
+}
