@@ -42,7 +42,7 @@ plugin
 ~~~
 ## Vue 插件调用方法
 * [货币转换](#zxmoney) 
-* [图片上传](#zx-upload-image)
+* [图片上传](#zxuploadimage)
 ## Zxmoney 
 ### 描述
 - 数字转换成货币格式
@@ -75,7 +75,7 @@ plugin
 |  zx-name   |  input name值    |
 |  val   |  父组件传值    |
 
-## ZxUploadImage 
+## Zxuploadimage 
 ### 描述
 - 上传图片功能
 ### 调用方法 
