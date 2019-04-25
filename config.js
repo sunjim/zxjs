@@ -75,6 +75,7 @@ require.config({
         uveUploadImage:'./vuecomponents/zxUploadImage',
         zxTimePickers:'./vuecomponents/zxDateTimePickers',
         zxTimePicker:'./vuecomponents/zxSignleTimePicker',
+        zxSingleSelect:'./vuecomponents/zxSingleSelect',//public/plugin/zxjs/vuecomponents/zxSingleSelect.js
         
         datetimepicker:'https://cdn.bootcss.com/jquery-datetimepicker/2.5.14/jquery.datetimepicker.full',
     },

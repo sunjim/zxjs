@@ -56,34 +56,42 @@ define([
                     modalobj = modal({
                         id: 'hdWebUpload',
                         width: options.width,
-                        title: '<ul class="nav nav-pills">\
-                        <li class="nav-item"><a href="#upload" aria-controls="home" role="tab" data-toggle="tab" class="nav-link active">上传图片</a></li>\
-                        <li class="nav-item"><a href="#imagelistsBox" aria-controls="profile" role="tab" data-toggle="tab" class="nav-link">浏览图片</a></li>\
-                    </ul>',
-                        content: '<div class="tab-content">\
-                    <div role="tabpanel" class="tab-pane active" id="upload"><div id="wrapper">\
-                          <div id="container">\
-                        <div id="uploader">\
-                            <div class="queueList">\
-                            <div id="dndArea" class="placeholder">\
-                            <div id="filePicker"></div>\
-                            <p>或将照片拖到这里</p>\
-                        </div>\
-                        </div>\
-                        <div class="statusBar">\
-                            <div class="progress">\
-                            <span class="text">0%</span>\
-                            <span class="percentage"></span>\
-                            </div><div class="info"></div>\
-                            <div class="btns">\
-                            <div class="btn btn-default" data-dismiss="modal">取消</div>\
-                            <div class="btn btn-info uploadBtn">确定使用</div>\
-                            </div> </div> </div> </div> </div></div>\
-                    <div role="tabpanel" class="tab-pane" id="imagelistsBox">\
-                        <div id="imagelists">暂无小程序图片资源</div>\
-                    </div>\
-                </div>\
-                ',
+                        title: `
+                        <ul class="nav nav-pills nav-pills-primary">
+                          <li class="nav-item"><a href="#upload" aria-controls="home" role="tab" data-toggle="tab" class="nav-link active">上传图片</a></li>
+                          <li class="nav-item"><a href="#imagelistsBox" aria-controls="profile" role="tab" data-toggle="tab" class="nav-link">浏览图片</a></li>
+                        </ul>`,
+                        content: `
+                          <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="upload"><div id="wrapper">
+                                  <div id="container">
+                                    <div id="uploader">
+                                        <div class="queueList">
+                                            <div id="dndArea" class="placeholder">
+                                              <div id="filePicker"></div>
+                                                <p>或将照片拖到这里</p>
+                                              </div>
+                                            </div>
+                                            <div class="statusBar">
+                                              <div class="progress">
+                                                <span class="text">0%</span>
+                                                <span class="percentage"></span>
+                                              </div>
+                                              <div class="info"></div>
+                                              <div class="btns">
+                                                <div class="btn btn-danger" data-dismiss="modal">取消</div>
+                                                <div class="btn btn-primary uploadBtn">确定使用</div>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="imagelistsBox">
+                                <div id="imagelists">暂无小程序图片资源</div>
+                            </div>
+                          </div>
+                        `,
                         events: {
                             'shown.bs.modal': function () {
                                 if (options.multiple) {
@@ -165,34 +173,36 @@ define([
                     modalobj = modal({
                         id: 'hdWebUpload',
                         width: 700,
-                        title: '<ul class="nav nav-pills nav-hd-upload" role="tablist">\
-                    <li role="presentation" class="active"><a href="#upload" aria-controls="home" role="tab" data-toggle="tab"  class="nav-link active">上传文件</a></li>\
-                    <li role="presentation"><a href="#imagelists" aria-controls="profile" role="tab" data-toggle="tab"  class="nav-link">浏览文件</a></li>\
-                    </ul>',
-                        content: ' <div class="tab-content">\
-                    <div role="tabpanel" class="tab-pane active" id="upload"><div id="wrapper">\
-                          <div id="container">\
-                        <div id="uploader">\
-                            <div class="queueList">\
-                            <div id="dndArea" class="placeholder">\
-                            <div id="filePicker"></div>\
-                            <p>或将文件拖到这里</p>\
-                        </div>\
-                        </div>\
-                        <div class="statusBar">\
-                            <div class="progress">\
-                            <span class="text">0%</span>\
-                            <span class="percentage"></span>\
-                            </div><div class="info"></div>\
-                            <div class="btns">\
-                            <div class="btn btn-default" data-dismiss="modal">取消</div>\
-                            <div class="btn btn-primary uploadBtn">确定使用</div>\
-                            </div> </div> </div> </div> </div></div>\
-                <div role="tabpanel" class="tab-pane" id="imagelists">\
-                \
-                </div>\
-                </div>\
-                ',
+                        title: `
+                          <ul class="nav nav-pills nav-pills-primary" role="tablist">
+                            <li role="presentation" class="active"><a href="#upload" aria-controls="home" role="tab" data-toggle="tab"  class="nav-link active">上传文件</a></li>
+                            <li role="presentation"><a href="#imagelists" aria-controls="profile" role="tab" data-toggle="tab"  class="nav-link">浏览文件</a></li>
+                          </ul>`,
+                        content: ` <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="upload">
+                            <div id="wrapper">
+                              <div id="container">
+                                <div id="uploader">
+                                    <div class="queueList">
+                                    <div id="dndArea" class="placeholder">
+                                    <div id="filePicker"></div>
+                                    <p>或将文件拖到这里</p>
+                                </div>
+                                </div>
+                                <div class="statusBar">
+                                    <div class="progress">
+                                    <span class="text">0%</span>
+                                    <span class="percentage"></span>
+                                    </div><div class="info"></div>
+                                    <div class="btns">
+                                    <div class="btn btn-danger" data-dismiss="modal">取消</div>
+                                    <div class="btn btn-primary uploadBtn">确定使用</div>
+                                    </div> </div> </div> </div> </div></div>
+                                    <div role="tabpanel" class="tab-pane" id="imagelists">
+                                    
+                                    </div>
+                        </div>
+                        `,
                         events: {
                             'shown.bs.modal': function () {
                                 //加载远程文件

@@ -39,6 +39,7 @@ plugin
 * [货币转换](#zxmoney) 
 * [图片上传](#zxuploadimage)
 * [时间选择](#zxtimepicker)
+* [下拉选择器](#zxsingleselect)
 ## Zxmoney 
 ### 描述
 - 数字转换成货币格式
@@ -123,3 +124,31 @@ plugin
 |  class-name   |  当前节点class    |
 |  date-label   |  label值    |
 |  date-name   |  input name值    |
+## Zxsingleselect 
+### 描述
+- 单个下拉选择器
+### 调用方法 
+- html
+~~~
+<vue-select input-label="选择公司" defalut-val="暂无选项" defalut-id="2" input-name="componey" :data-arr="options"></vue-select>
+~~~
+- js
+~~~
+ require(['vue','zxSingleSelect'],function(vue,zxSingleSelect){
+    new vue({
+        ...
+        components:{
+            'vue-select':zxSingleSelect
+        }
+    });
+   })
+~~~
+### 参数说明 
+
+|   参数  |  说明     |
+| --- | ----------- |
+|  input-label   |  label值    |
+|  defalut-val   |  下拉默认选项    |
+|  defalut-id    |  input 隐藏默认值    |
+|  input-name    |  input 隐藏默name    |
+|  data-arr      |  下拉框显示的数据   |
