@@ -5,12 +5,7 @@ plugin
 ├── zxjs
 │   ├── component
 │   ├── image
-│   ├── vuecomponents
-│   └── scss
-│       ├── bootstrap
-│       ├── core
-│       ├── material-kit.scss
-│       └── plugins
+│   └── vuecomponents
 ├── config.js
 ├── require.js
 ├── css.min.js
@@ -43,6 +38,7 @@ plugin
 ## Vue 插件调用方法
 * [货币转换](#zxmoney) 
 * [图片上传](#zxuploadimage)
+* [时间选择](#zxtimepicker)
 ## Zxmoney 
 ### 描述
 - 数字转换成货币格式
@@ -101,3 +97,29 @@ plugin
 |  upload-label   |  插件标题      |
 |  input-name     |  input name值 |
 |  pre-image      |  预览图片      |
+## Zxtimepicker 
+### 描述
+- 时间选择器
+### 调用方法 
+- html
+~~~
+ <vue-datepicker class-name="singleTime" date-label="时间区间" date-name="start" ></vue-datepicker> 
+~~~
+- js
+~~~
+ require(['vue','zxTimePicker'],function(vue,zxTimePicker){
+    new vue({
+        ...
+        components:{
+            'vue-datepicker':zxTimePicker
+        }
+    });
+   })
+~~~
+### 参数说明 
+
+|   参数  |  说明     |
+| --- | ----------- |
+|  class-name   |  当前节点class    |
+|  date-label   |  label值    |
+|  date-name   |  input name值    |

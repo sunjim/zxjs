@@ -61,24 +61,27 @@ require.config({
         axios: 'https://lib.baomitu.com/axios/0.19.0-beta.1/axios.min',
         //plugins
         zxcore: 'zxcore',
-        selectpicker: '../../js/plugins/bootstrap-selectpicker',
         switch: '../../js/plugins/bootstrap-switch',
         tagsinput: '../../js/plugins/bootstrap-tagsinput',
-        monment: '../../js/plugins/moment.min',
+        moment: '../../js/plugins/moment.min',
         nouislider: '../../js/plugins/nouislider.min',
-        datetimepicker: '../../js/plugins/bootstrap-datetimepicker',
         //2019.2.7
         vuejs: 'package/Sortable-master/vuedraggable.min',
         //2019.04.07
         chosen: '../../js/plugins/chosen/chosen.jquery.min',
-        uveButton:'./vuecomponents/zxbutton',
         uveMoney:'./vuecomponents/zxmoney',
         uveMemberChoose:'./vuecomponents/zxmc',
         uveAuto:'./vuecomponents/zxAutombile',
         uveUploadImage:'./vuecomponents/zxUploadImage',
+        zxTimePickers:'./vuecomponents/zxDateTimePickers',
+        zxTimePicker:'./vuecomponents/zxSignleTimePicker',
+        
+        datetimepicker:'https://cdn.bootcss.com/jquery-datetimepicker/2.5.14/jquery.datetimepicker.full',
     },
     shim: {
-
+        datetimepicker: {
+            deps: ["jquery","css!./package/datetimepicker/dateteimepicker.css"],
+        },
         chosen: {
             deps: ['css!../../js/plugins/chosen/component-chosen.css'],
         },
