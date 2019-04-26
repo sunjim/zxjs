@@ -53,7 +53,7 @@ define(['lodash','zxcore'],function(_,zxcore){
                     </div>
                     <div class="dropdown bootstrap-select col-sm-2">
                         <button type="button"
-                                class="btn dropdown-toggle bs-placeholder select-with-transition btn-primary btn-round"
+                                class="btn dropdown-toggle bs-placeholder select-with-transition btn-outline-primary btn-round"
                                 data-toggle="dropdown" role="button" aria-expanded="false">
                             <div class="filter-option">
                                 <div class="filter-option-inner">

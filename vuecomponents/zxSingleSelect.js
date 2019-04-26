@@ -22,6 +22,10 @@ define(['lodash'],function(zxcore){
                 type:Array,
                 default:[]
             },
+            labelAlign:{
+                type:String,
+                default:'text-right'
+            },
         },
         data:function(){
             return{
@@ -39,6 +43,7 @@ define(['lodash'],function(zxcore){
             choose:function(id,index){
                 this.chooseId = id;
                 this.chooseButton = this.picker(index);
+                this.$emit('select-change',this.options[index].id);
             },
             picker:function(index){
                 return _.toArray(this.options[index])[1];
@@ -47,7 +52,7 @@ define(['lodash'],function(zxcore){
         template:`
             <div class="form-group row ">
             <input type="text" v-model="chooseId" :name="inputName" hidden />
-                <label for="title" class="col-md-2 col-form-label text-right" style="line-height:3;">{{inputLabel}}</label>
+                <label for="title" :class="labelAlign" class="col-md-2 col-form-label" style="line-height:3;">{{inputLabel}}</label>
                 <div class="col-sm-9 row col-md-8 ">
                     <div class="dropdown input-group-prepend">
                         <button class="btn btn-outline-primary  dropdown-toggle dropdown-toggle-split"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

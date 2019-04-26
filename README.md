@@ -130,7 +130,7 @@ plugin
 ### 调用方法 
 - html
 ~~~
-<vue-select input-label="选择公司" defalut-val="暂无选项" defalut-id="2" input-name="componey" :data-arr="options"></vue-select>
+<vue-select label-align="text-left" input-label="选择公司" defalut-val="暂无选项" defalut-id="2" input-name="componey" :data-arr="options" @select-change="selectChange"></vue-select>
 ~~~
 - js
 ~~~
@@ -145,10 +145,12 @@ plugin
 ~~~
 ### 参数说明 
 
-|   参数  |  说明     |
-| --- | ----------- |
-|  input-label   |  label值    |
-|  defalut-val   |  下拉默认选项    |
-|  defalut-id    |  input 隐藏默认值    |
-|  input-name    |  input 隐藏默name    |
-|  data-arr      |  下拉框显示的数据   |
+|   参数  |  说明     |默认值|
+| --- | ----------- |---|
+|  input-label   |  label值    ||
+|  label-align   |  label值    |text-right|
+|  defalut-val   |  下拉默认选项    ||
+|  defalut-id    |  input 隐藏默认值    ||
+|  input-name    |  input 隐藏默name    ||
+|  data-arr      |  下拉框显示的数据   ||
+|  @select-change      |  下拉框改变传递函数   ||
