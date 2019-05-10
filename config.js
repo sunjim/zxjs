@@ -8,7 +8,7 @@ require.config({
         scrollTo: 'https://cdn.bootcss.com/jquery-scrollTo/2.1.2/jquery.scrollTo.min',
         Aliplayer: 'http://g.alicdn.com/de/prismplayer/2.0.1/aliplayer-min',
         //微信JSSDK
-        jweixin: 'http://res.wx.qq.com/open/js/jweixin-1.2.0',
+        jweixin: 'package/jweixin.1.4',
         //百度编辑器
         ueditor: 'package/ueditor/ueditor.all',
         //代码高亮
@@ -76,8 +76,18 @@ require.config({
         zxTimePickers:'./vuecomponents/zxDateTimePickers',
         zxTimePicker:'./vuecomponents/zxSignleTimePicker',
         zxSingleSelect:'./vuecomponents/zxSingleSelect',//public/plugin/zxjs/vuecomponents/zxSingleSelect.js
-        
+        zxNomalSelect:'./vuecomponents/zxNomalSelect',//public/plugin/zxjs/vuecomponents/zxSingleSelect.js
+        barChart:'./vuecomponents/Chart/barChart',
+        bingChart:'./vuecomponents/Chart/bingChart',
+        lineChart:'./vuecomponents/Chart/lineChart',
+        bizChart:'./vuecomponents/Chart/bizChart',
+        radarChart:'./vuecomponents/Chart/radarChart',
         datetimepicker:'https://cdn.bootcss.com/jquery-datetimepicker/2.5.14/jquery.datetimepicker.full',
+        //图形库
+        g2:'https://gw.alipayobjects.com/os/lib/antv/g2/3.4.10/dist/g2.min',
+        g2Set:'package/G2/G2SetData',//public/plugin/zxjs/package/G2/G2SetData.js
+        //360° 转角
+        circlr:'package/G2/circlr.min',
     },
     shim: {
         datetimepicker: {
