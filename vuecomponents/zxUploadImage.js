@@ -1,47 +1,51 @@
-define(['zxcore'],function(zxcore){
+define(['zxcore'], function(zxcore) {
     'use strict';
     let zxbutton = {
-        props:{
+        props: {
             //label
-            uploadLabel:{
-                type:String,
-                default:'上传图片',
-                require:true,
+            uploadLabel: {
+                type: String,
+                default: '上传图片',
+                require: true,
             },
             //input name
-            inputName:{
-                type:String,
-                default:'uploadname',
-                require:true,
+            inputName: {
+                type: String,
+                default: 'uploadname',
+                require: true,
             },
             //预加载图片地址
-            preImage:{
-                type:String,
-                default:'/images/lu/welcome.gif',
+            preImage: {
+                type: String,
+                default: '/images/lu/welcome.gif',
+            },
+            textP: {
+                type: String,
+                default: 'text-right',
             },
         },
-        data:function(){
-            return{
-                fileclass:true,
-                imgpath:'',
-            }
+        data: function() {
+            return {
+                fileclass: true,
+                imgpath: '',
+            };
         },
-        methods:{
-            uploadImagePc:function(){
+        methods: {
+            uploadImagePc: function() {
                 let that = this;
-                zxcore.image(function(images){
+                zxcore.image(function(images) {
                     that.imgpath = images[0];//显示图片
                     that.fileclass = false;
                 });
             },
-            removeImg:function(){
+            removeImg: function() {
                 this.fileclass = true;
-                this.imgpath   = '';
+                this.imgpath = '';
             },
         },
-        template:`
+        template: `
             <div class="form-group row">
-                <label for="am_image" class="col-md-2 col-form-label text-right">{{uploadLabel}}</label>
+                <label for="am_image" class="col-md-2 col-form-label " :class="textP">{{uploadLabel}}</label>
                 <div class="col-md-8">
                     <div :class="fileclass ? 'fileinput-new' : 'fileinput-exists' " class="fileinput text-center" >
                         <div class="fileinput-new thumbnail img-raised">
@@ -62,7 +66,7 @@ define(['zxcore'],function(zxcore){
                     </div>
                 </div>
             </div>
-        `
+        `,
     };
-   return zxbutton;
+    return zxbutton;
 });

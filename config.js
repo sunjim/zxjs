@@ -78,9 +78,10 @@ require.config({
         zxSingleSelect:'./vuecomponents/zxSingleSelect',//public/plugin/zxjs/vuecomponents/zxSingleSelect.js
         zxNomalSelect:'./vuecomponents/zxNomalSelect',//public/plugin/zxjs/vuecomponents/zxSingleSelect.js
         barChart:'./vuecomponents/Chart/barChart',
-        bingChart:'./vuecomponents/Chart/bingChart',
+        bingChart:'./vuecomponents/Chart/pieChart',
         lineChart:'./vuecomponents/Chart/lineChart',
         bizChart:'./vuecomponents/Chart/bizChart',
+        baseLineChart:'./vuecomponents/Chart/baseLineChart',//public/plugin/zxjs/vuecomponents/Chart/baseLineChart.js
         radarChart:'./vuecomponents/Chart/radarChart',
         datetimepicker:'https://cdn.bootcss.com/jquery-datetimepicker/2.5.14/jquery.datetimepicker.full',
         //图形库

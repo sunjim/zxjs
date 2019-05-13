@@ -5,6 +5,8 @@ plugin
 ├── zxjs
 │   ├── component
 │   ├── image
+│   ├── less
+│   ├── package
 │   └── vuecomponents
 ├── config.js
 ├── require.js
@@ -24,6 +26,10 @@ plugin
     };
 </script>
 ~~~
+> package 包在百度网盘里面 
+    链接：https://pan.baidu.com/s/1UZRy3r1ymqgiFU-4C-VDTg 
+    提取码：vdaw 
+                   
 ## css 样式根据实际需求在 head 自行引入
 ## require laravel 引入
 ~~~

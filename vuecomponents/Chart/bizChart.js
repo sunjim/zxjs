@@ -1,4 +1,4 @@
-define([],function(){
+define(['g2'],function(G2){
     'use strict';
     let BizChar = {
         props:{
