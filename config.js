@@ -73,9 +73,12 @@ require.config({
         uveMemberChoose:'./vuecomponents/zxmc',
         uveAuto:'./vuecomponents/zxAutombile',
         uveUploadImage:'./vuecomponents/zxUploadImage',
+        zxMultipleUploadImage:'./vuecomponents/zxMultipleUploadImage',
         zxTimePickers:'./vuecomponents/zxDateTimePickers',
         zxTimePicker:'./vuecomponents/zxSignleTimePicker',
         zxSingleSelect:'./vuecomponents/zxSingleSelect',//public/plugin/zxjs/vuecomponents/zxSingleSelect.js
+        zxSimpleSelect:'./vuecomponents/zxSimpleSelect',//简易版
+        zxSimpleModel:'./vuecomponents/zxSimpleModel',//简易版模态框
         zxNomalSelect:'./vuecomponents/zxNomalSelect',//public/plugin/zxjs/vuecomponents/zxSingleSelect.js
         barChart:'./vuecomponents/Chart/barChart',
         bingChart:'./vuecomponents/Chart/pieChart',
@@ -89,6 +92,7 @@ require.config({
         g2Set:'package/G2/G2SetData',//public/plugin/zxjs/package/G2/G2SetData.js
         //360° 转角
         circlr:'package/G2/circlr.min',
+        cityData:'package/datetimepicker/cityData.min',
     },
     shim: {
         datetimepicker: {

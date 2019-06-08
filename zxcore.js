@@ -35,25 +35,7 @@
             });
         });
     },
-    //自动展开已经预览的导航
-    util.isToggle = function(e) {
-        if (!e && '' != e) {
-            return '';
-        }
-        $(e).click(function() {
-            'use strict';
-            let i = $(e).index(this);
-            sessionStorage.setItem('current_meun_index', i);
-        });
-        let currentMenuIndex = sessionStorage.getItem('current_meun_index');
-        $(e).
-                eq(currentMenuIndex).
-                addClass('menu-open');
-        $(e).
-                eq(currentMenuIndex).
-                find('.treeview-menu').
-                show();
-    };
+
     //编辑器
     util.editor = function(id, opt, callback){
         if (!id && "" != id) return "";
